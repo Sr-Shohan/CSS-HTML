@@ -22,11 +22,13 @@ ul li a{
     background: rgb(184, 85, 85);
     display: none;
     position: absolute;
-    min-width: 200px;
+    min-width: 120px;
+    
 }
 .dropdown-content a{
     display: block;
     color: azure;
+    border: 1px;
 }
 
 ul li a:hover{
