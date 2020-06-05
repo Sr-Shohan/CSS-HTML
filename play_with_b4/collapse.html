@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collapse</title>
+
+    <!-- bootstrap, font awesome  -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/fontawesome/css/all.min.css">
+</head>
+<body>
+
+        <div class="container">
+            <div class="jumbotron">
+                 <button class="btn btn-primary mb-4"  data-toggle="collapse"data-target="#collapse-1">Read more </button>
+            
+
+        <div class="collapse" id="collapse-1">
+            <div class="card">
+                <div class="card-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam tempora deleniti nobis facere voluptas sapiente voluptate autem, qui, quaerat consequuntur corrupti mollitia accusamus.
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ACCORDION -->
+
+        <div id="accordion" role="tablist">
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="m-0">
+                        <a href="#sec-1" data-toggle="collapse" >Section-1</a>
+                    </h5>
+                </div>
+                <div class="collapse " id="sec-1" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nisi modi sapiente!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolorem quod autem?
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="m-0">
+                        <a href="#sec-2" data-toggle="collapse" >section-2</a>
+                    </h5>
+                </div>
+                <div class="collapse" id="sec-2" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi quae laudantium quaerat quo adipisci fugit voluptatibus dolor voluptate numquam, debitis veniam sunt?
+                    </div>
+                </div>
+
+
+
+              <div class="card-header">
+                  <h5 class="m-0">
+                      <a href="#sec-3" data-toggle="collapse" >Section-3</a>
+                  </h5>
+                  <div class="collapse" id="sec-3" data-parent="#accordion">
+                      <div class="card-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ducimus vitae eum!
+                      </div>
+
+                  </div>
+              </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div id="accordianId" role="tablist" aria-multiselectable="true">
+            <div class="card">
+                <div class="card-header" role="tab" id="section1HeaderId">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                  Section 1
+                </a>
+                    </h5>
+                </div>
+                <div id="section1ContentId" class="collapse in " role="tabpanel" aria-labelledby="section1HeaderId">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt et quae in. Facere et tempore sed odit, quo similique molestias rerum voluptatem a.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="section2HeaderId">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId">
+                  Section 2
+                </a>
+                    </h5>
+                </div>
+                <div id="section2ContentId" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId">
+                    <div class="card-body">
+                        Section 2 content
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+ 
+
+               <!-- form? -->
+
+    <div class="container">
+        <div class="jumbotron">
+            <form action="card.html" class="was-validated">
+              <div class="form-group">
+                  <label for="uname">Username: </label>
+                  <input type="text" class="form-control" id="uname" placeholder="Enter Username" name="uname" required>
+                <div class="valid-feedback">
+                           valid
+                </div>
+                <div class="invalid-feedback">already taken</div>
+                </div>
+                <div class="form-group ">
+                    <label for="pass">Password</label>
+                    <input type="password" class="form-control" id="pass" placeholder="Enter password" name="pass" required >
+                    <div class="valid-feedback">wow</div>
+                </div>
+
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    </div>
+
+            <!-- another form  -->
+
+      <form action="">
+             <div class="form-group mx-5">
+                 <label for="inputemail">Email address</label>
+                 <input type="text" class="form-control" id="inputemail"aria-describedby="emailhelp" placeholder="enter email">
+                 <small id="emailhelp" class="form-text text-muted">we care about you email</small>
+             </div>
+             <div class="form-group mx-5">
+                 <label for="inputpass">Password</label>
+                 <input type="password" class="form-control" id="inputpass" aria-describedby="passhelp" placeholder="Enter password">
+                 
+             </div>
+             <div class="form-check">
+                 <button class="btn btn-primary mx-5" type="submit">Submit</button>
+             </div>
+
+
+      </form>
+
+                <!-- inline form -->
+                <div class="container m-5">
+                    <form action="https://facebook.com">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First">
+                            </div>
+        
+                            <div class="col">
+                                <input type="pass" class="form-control" placeholder="pass">
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- jquery first, then popper.js , then bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="bootstrap/js/jquery.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>  
+</body>
+</html>
