@@ -1,0 +1,60 @@
+body{
+    font: 20px Montserrat,sans-serif;
+    line-height: 1.5;
+    
+    
+}
+.navbar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    letter-spacing: 5px;
+    border-radius: 0;
+}
+.w-100 {
+    width: 100% !important;
+    height: 100vh;
+  }
+  .dropdown-menu{
+      background-color: rgba(202, 202, 202, 0.582) !important;
+  }
+  .container{
+      padding: 80px 100px;
+      text-align: center;
+  }
+  .container h3{
+    letter-spacing: 5px;
+  }
+  .person{
+      border: 10px solid transparent;
+      opacity: 0.9;
+      margin-bottom: 25px;
+   
+      
+  }
+   .collapse{
+      font-size: 14px!important;
+  }
+  .person:hover{
+      border-color: #f1f1f2;
+  }
+  .container-fluid{
+      padding: 80px 100px;
+      text-align: center;
+  }
+  .bg-dark .container h3{
+      letter-spacing: 10px;
+      color: #f1f1f2;
+      font-weight: bold;
+  }
+  .bg-dark .container p{
+      color: #f1f1f2;
+  }
+ .bg-dark .container span{
+     font-size: small;
+ }
+ .bg-grey{
+     background-color: rgb(116, 124, 131);
+ }
