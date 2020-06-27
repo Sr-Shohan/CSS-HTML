@@ -16,15 +16,17 @@
     </button>
     <div class="collapse navbar-collapse " id="navbarText">
 
-      <ul class="navbar-nav ml-auto ">
+      <ul class="navbar-nav mr-auto ">
         <li class="nav-item active p-3"><a class="nav-link text-white" href="#">HOME <span class="sr-only">(current)</span></a></li>
         <li class="nav-item p-3"><a class="nav-link text-white " href="#about">ABOUT</a></li>
         <li class="nav-item p-3"><a class="nav-link text-white" href="#">CHEF</a></li>
         <li class="nav-item p-3"><a class="nav-link text-white" href="#">MENU</a></li>
         <li class="nav-item p-3 "><a class="nav-link text-white " href="#"> CONTACT</a></li>
-        <li class="nav-item pl-custom"><a class="nav-link text-white " href="#"> CALL NOW!  010 020 0340</a></li>
-        <li class="nav-item  pl-3 pr-4"><a class="btn btn-danger" href="#">Reserve a Table</a></li>
-      </ul>
+        <!-- -->
+      </ul >
+     
+      <div class="text-white nav-item pr-4">CALL NOW! 010 020 0340</div>
+      <div class="btn  btn-danger .nav-item">RESERVE A TABLE</div>
     </div>
   </nav>
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -56,14 +58,7 @@
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+       
       </div>
 
             <!--================== About================ -->
@@ -82,55 +77,215 @@
       </div>
 
         <!--===================CHEF================ -->
-        <div class="jumbotron border-top-0 mb-0 text-center" style="border-radius: 0;">
-          <div class="row ">
-            <div class="col-sm-12 col-md-12">
-              <h2 style="color: black; font-weight: bold; " class="">Meet our chefs</h2>
-            <small style="color: rgb(156, 149, 142); font-weight: 700; font-size: x-small;">THEY ARE NICE & FRIENDLY</small>
+         <div class=" jumbotron jumbotron-fluid  text-center mt-5">
+         <h2 style="color: black; font-weight: bold;" >Meet Our Chefs</h2>
+         <small style="color: rgb(156, 149, 142); font-weight: 700; font-size: x-small;">THEY ARE NICE & FRIENDLY</small>
+           <div class="container">
+            <div class="card-deck my-5 ">
+              <div class="card border-0">
+                <img src="images/team-image1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 >New Catherine</h4>
+                  <small style="color: rgb(156, 149, 142); font-weight: 700; font-size: small;">KITCHEN OFFICER</small>
+               
+                </div>
+              </div>
+              <div class="card border-0">
+                <img src="images/team-image2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 >Lindsay Perlen</h4>
+                  <small style="color: rgb(156, 149, 142); font-weight: 700; font-size: small;">OWNER & MANAGER</small>
+                </div>
+              </div>
+              <div class="card border-0">
+                <img src="images/team-image3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 >Isabella Greace</h4>
+                  <small style="color: rgb(156, 149, 142); font-weight: 700; font-size: small;">PIZZA SPECIALIST</small>
+                </div>
+              </div>
             </div>
-            
-            <div class="container d-flex">
-              <div class="col-md-4 col-sm-4">
-                <img src="images/team-image1.jpg" alt="Chef one" class="img-thumbnail">
-                <h3 class="mt-3">New Catherine</h3>
-                <small style="color: rgb(156, 149, 142); font-weight: 700; font-size: small;">KITCHEN OFFICER</small>
-              </div>
-              <div class="col-md-4 col-sm-4 d-flex">
-                <img src="images/team-image2.jpg" alt="Chef two" class="img-thumbnail">
-                <h3 class="mt-3">Lindsay Perlen</h3>
-                <small style="color: rgb(156, 149, 142); font-weight: 700; font-size: small;">OWNER & MANAGER</small>
-              </div>
-              <div class="col-md-4 col-sm-4 d-flex">
-                <img src="images/team-image3.jpg" alt="Chef two" class="img-thumbnail">
-                <h3 class="mt-3">Lindsay Perlen</h3>
-                <small style="color: rgb(156, 149, 142); font-weight: 700; font-size: small;">OWNER & MANAGER</small>
-              </div>
+           </div>
+         </div>
 
+
+         <!-- ==============OUR MENU================= -->
+         <div class="container-fluid my-5 text-center">
+          <h2 class="pt-5" style="color: black; font-weight: bold; " >OUR MENUS</h2>
+          <small style="color: rgb(156, 149, 142); font-weight: 700; font-size: x-small;">TEA TIMING & DINING</small>
+
+         </div>
+
+
+         <section id="menu" data-stellar-background-ratio="0.5">
+          <div class="container-fluid">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                              <h2>Our Menus</h2>
+                              <h4>Tea Time &amp; Dining</h4>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="images/menu-image1.jpg" class="image-popups" title="American Breakfast">
+                                   <img src="images/menu-image1.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>American Breakfast</h3>
+                                             <p>Tomato / Eggs / Sausage</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>$25</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="images/menu-image2.jpg" class="image-popup" title="Self-made Salad">
+                                   <img src="images/menu-image2.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Self-made Salad</h3>
+                                             <p>Green / Fruits / Healthy</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>$18</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="images/menu-image3.jpg" class="image-popup" title="Chinese Noodle"></a>
+                                   <img src="images/menu-image3.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Chinese Noodle</h3>
+                                             <p>Pepper / Chicken / Vegetables</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>$34</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="images/menu-image4.jpg" class="image-popup" title="Rice Soup">
+                                   <img src="images/menu-image4.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Rice Soup</h3>
+                                             <p>Green / Chicken</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>$28</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="images/menu-image5.jpg" class="image-popup" title="Project title">
+                                   <img src="images/menu-image5.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Deli Burger</h3>
+                                             <p>Beef / Fried Potatoes</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>$46</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="images/menu-image6.jpg" class="image-popup" title="Project title">
+                                   <img src="images/menu-image6.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Big Flat Fried</h3>
+                                             <p>Pepper / Crispy</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>$30</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+
+               </div>
+          </div>
+     </section>
+
+
+
+
+
+      <!-- ========================Map and contact===================== -->
+    <div class="container-fluid my-5 mt-5">
+     
+      <din class="row">
+        <div class="col-md-6 col-sm-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58519.66442339615!2d89.13405341928394!3d23.5512332129216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fee5deccb0ce3f%3A0xad9518dde3b46e1a!2sJhenaidah!5e0!3m2!1sen!2sbd!4v1593282076799!5m2!1sen!2sbd" width="100%" height="450px" frameborder="0" style="border-radius: 5px; margin: 20px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <form class="ml-4">
+          <div class="form-row">
+            <div class="form-group col-md-6 col-sm-12">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
             </div>
-        
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
             </div>
-            
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
           </div>
         
+          <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+        </form>
+
+
+        
       
+      </din>
+    </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+     
        
 
 
