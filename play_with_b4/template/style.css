@@ -11,13 +11,93 @@
    background: rgb(26, 25, 25) !important;  
 }
 .carousel-item{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
-    min-height: 350px;
+    min-height: 600px;
     background: no-repeat center center  scroll;
     background-size: cover;
     position: relative;
   }
 
-  
+  @media (max-width:500px){
+    .carousel-item{
+        height: 100vh;
+        width: 100%;
+        min-height: 600px;
+        background: no-repeat center center  scroll;
+        background-size: cover;
+        position: relative;
+      }
+    
+   
+  }
+ .carousel-caption{
+     text-align: center;
+     bottom: 200px;
+     position: absolute;
+ }
+ .carousel-caption h1{
+     font-weight: 200;
+ }
+ .carousel-caption h4{
+      font-weight: 400;
+      font-size: 20px;
+  }
+  .carousel-caption .btn{
+      border-radius: 16px;
+      margin: 10px;
+      padding: 5px 15px 5px 15px;
+
+  }
+.carousel-caption .btn-outline-light:hover{
+    color:rgb(41, 170, 41) !important;
+
+}
+
+.carousel-caption .btn-light{
+    color:rgb(41, 170, 41);
+}
+.carousel-caption .btn-light:hover{
+    color: aliceblue;
+    background-color: rgb(41, 170, 41) ;
+    border: rgb(41, 170, 41) ;
+}
  
+@media (max-width:500px){
+    .carousel-caption h4{
+        display: none;
+    }
+
+}
+
+.items{
+    margin-top: 30px;
+}
+
+#about .btn-primary{
+    color: aliceblue;
+    background-color: rgb(41, 170, 41) ;
+    border: rgb(41, 170, 41) ;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+    margin: 10px;
+}
+#about .container .border-bottom{
+    border-bottom-width:10px;
+}
+
+.work{
+    margin-left: 75px;
+}
+.work h5{
+    font-weight: 600;
+}
+.work a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #000;
+    font-weight: 600;
+}
+.work a:hover{
+    color: rgb(41, 170, 41);
+}
