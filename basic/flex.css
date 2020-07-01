@@ -1,2 +1,18 @@
+h2{
+    font-size: 20px;
+    margin: 0;
+}
+.flex-container{
+    border: 5px solid rgb(176, 165, 185);
+    margin: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    
+
 }
 .flex-item{
+    background: #f2f2f2;
+    padding: 10px;
+    margin: 10px;
+    
+}

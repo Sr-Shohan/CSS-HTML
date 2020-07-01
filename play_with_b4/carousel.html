@@ -9,18 +9,68 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/fontawesome/css/all.min.css">
     <style>
-        .carousel-item {
-  height: 100vh;
-  min-height: 350px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+        /*
+Removes white gap between slides - chagnge to base color of slide images
+*/
+.carousel {
+  background:#eb1b00;
 }
+
+/*
+Forces image to be 100% width and not max width of 100%
+*/
+.carousel-item .img-fluid {
+  width:100%;
+}
+
+/* 
+anchors are inline so you need ot make them block to go full width
+*/
+.carousel-item a {
+  display: block;
+  width:100%;
+}
+
+    
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
 
     
 
@@ -28,8 +78,8 @@
 
 
 
-    <div class="container-fluid ">
-        <div id="fastcaro" class="carousel slide justify-content-center" data-ride="slide"  >
+    <!-- <div class="container-fluid ">
+        <div id="fastcaro" class="carousel slide carousel-fade " data-ride="carousel"  >
             <ol class="carousel-indicators">
                 <li data-target="#fastcaro" data-slide-to="0" class="active"></li>
                 <li data-target="#fastcaro" data-slide-to="1" ></li>
@@ -37,28 +87,153 @@
                 <li data-target="#fastcaro" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner" >
-                <div class="carousel-item active">
-                    <img   class="w-100 d-block" src="image/moster-(1).jpg" alt="photo 1" >
+                <div class="carousel-item active" data-interval="1000">
+                    <img   class="w-100  d-block" src="image/moster-(1).jpg" alt="photo 1" >
                     <div class="carousel-caption">
                         <h2 class="border-bottom border-primary">Moster</h2>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item"data-interval="1000">
                     <img class="w-100 d-block" src="image/moster-(2).jpg" alt="photo 2" >
                 </div>
 
-                <div class="carousel-item">
+                <div class="carousel-item"data-interval="1000">
                     <img src="image/moster-(3).jpg" alt="photo" class="w-100 d-block">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="">
                     <img src="image/moster-(4).jpg" alt="photo" class="w-100 d-block">
 
                 </div>
        
             </div>
         </div>
+        <a href="#fastcaro" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a href="#fastcaro" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+            <span class="sr-only">Next</span>
+        </a>
+
 
     </div>
+ -->
+
+
+
+    <!-- extra -->
+
+ 
+          <!--
+    ####################################################
+    C A R O U S E L
+    ####################################################
+    -->
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="1000">
+                <a href="https://bootstrapcreative.com/">
+                    <!-- 
+                    If you need more browser support use https://scottjehl.github.io/picturefill/
+                    If a picture looks blurry on a retina device you can add a high resolution like this
+                    <source srcset="img/blog-post-1000x600-2.jpg, blog-post-1000x600-2@2x.jpg 2x" media="(min-width: 768px)">
+
+                    What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
+                     -->
+                     <!-- <picture>
+                         
+                      <source srcset="https://dummyimage.com/2000x500/007aeb/4196e5" media="(min-width: 1400px)">
+                      <source srcset="https://dummyimage.com/1400x500/#007aeb/4196e5" media="(min-width: 769px)">
+                       <source srcset="image/" media="(min-width: 577px)">
+                      <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
+                    </picture> -->
+
+                    <picture>
+                        <source media="(min-width:759px)" src="image/moster-(1).jpg">
+                            <img src="image/moster-(2).jpg" alt="" class="d-block img-fluid">
+                    </picture>
+
+                    <div class="carousel-caption">
+                        <div>
+                            <h2>Digital Craftsmanship</h2>
+                            <p>We meticously build each site to get results</p>
+                            <span class="btn btn-sm btn-outline-secondary">Learn More</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- /.carousel-item -->
+            <div class="carousel-item" data-interval="1000">
+                <a href="https://bootstrapcreative.com/">
+                     <picture>
+                      <source src="image/moster-(3).jpg" media="(min-width: 1400px)">
+                    
+                      <img src="image/moster-(3).jpg" alt="responsive image" class="d-block img-fluid">
+                    </picture>
+
+                    <div class="carousel-caption justify-content-center align-items-center">
+                        <div>
+                            <h2>Every project begins with a sketch</h2>
+                            <p>We work as an extension of your business to explore solutions</p>
+                            <span class="btn btn-sm btn-outline-secondary">Our Process</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- /.carousel-item -->
+            <div class="carousel-item" data-interval="1000">
+                <a href="https://bootstrapcreative.com/">
+                     <picture>
+                      <source srcset="https://dummyimage.com/2000x500/007aeb/4196e5" media="(min-width: 1400px)">
+                      <source srcset="https://dummyimage.com/1400x500/007aeb/4196e5" media="(min-width: 769px)">
+                       <source srcset="https://dummyimage.com/800x500/007aeb/4196e5" media="(min-width: 577px)">
+                      <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
+                    </picture>
+
+                    <div class="carousel-caption justify-content-center align-items-center">
+                        <div>
+                            <h2>Performance Optimization</h2>
+                            <p>We monitor and optimize your site's long-term performance</p>
+                            <span class="btn btn-sm btn-secondary">Learn How</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- /.carousel-item -->
+        </div>
+        <!-- /.carousel-inner -->
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- /.carousel -->
+
+
+<div class="container-fluid text-center">
+    <p>Full width carousel with a maximum height and art direction. Resize window to see image change based on the size of the window.</p>
+</div>
+<!-- /.container -->
+
+
+
+
+
+
+
+
+  
+
 
 
 

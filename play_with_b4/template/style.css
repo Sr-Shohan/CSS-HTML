@@ -11,18 +11,13 @@
    background: rgb(26, 25, 25) !important;  
 }
 .carousel-item{
-    /* width: 100% !important;
-    overflow: hidden !important;
-    position: relative !important;
-    text-align: center !important;
-    height: 100vh; */
-
-    /* height: 100vh;
+    height: 100vh;
     width: 100%;
     min-height: 350px;
     background: no-repeat center center  scroll;
     background-size: cover;
-    position: relative; */
+    position: relative;
   }
+
   
  

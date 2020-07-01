@@ -1,0 +1,16 @@
+<script>
+    $(window).scroll(function(){
+      $('nav').toggleClass('scrolled',$(this).scrollTop()> 50);
+    });
+  </script>
+
+  <!--================ css========= -->
+  .bg-dark{
+    background: transparent !important;
+    transition: .5s ease-out;
+    
+}
+.bg-dark.scrolled {
+   background: rgb(26, 25, 25) !important;
+   
+}
