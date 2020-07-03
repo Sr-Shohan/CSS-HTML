@@ -11,7 +11,7 @@
    background: rgb(26, 25, 25) !important;  
 }
 .carousel-item{
-    height: 90vh;
+    height: 95vh;
     width: 100%;
     min-height: 600px;
     background: no-repeat center center  scroll;
@@ -100,4 +100,120 @@
 }
 .work a:hover{
     color: rgb(41, 170, 41);
+}
+
+#subscribe{
+    padding: 80px 0px;
+    background-image: url(images/slide-02.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#subscribe .heading{
+    text-align: center;
+}
+
+#subscribe h2{
+    color: aliceblue;
+    font-weight: 700;
+}
+
+#subscribe h5{
+    color: aliceblue;
+    font-weight: 300;
+    font-size: medium;
+}
+#subscribe p{
+    font-size: 15px;
+    color: aliceblue;
+    padding-top: 20px;
+}
+#subscribe input{
+    background:transparent;
+    width: 100%;
+    border: 1px solid rgb(255, 242, 242);
+    padding: 5px 20px;
+    border-radius: 19px;
+    color: #fff !important;
+}
+
+::placeholder{
+    color: aliceblue;
+}
+#subscribe .btn{
+    background-color: #fff;
+    color: rgb(66, 197, 66);
+    padding: 5px 40px;
+    margin-left: 0px;
+    border-radius: 19px;
+    border:1px solid #fff
+}
+
+#subscribe .btn:hover{
+    background-color: rgb(66, 197, 66);
+    color: #fff;
+    border:1px solid rgb(66,197,66);
+}
+
+#subscribe .col-md-4{
+    margin-left: 0;
+
+}
+fieldset .btn{
+    margin: 0px !important;
+}
+
+#project{
+    margin-top: 120px;
+    margin-bottom: 120px;
+
+}
+#project ul{
+    padding: 0px;
+    margin: 0px;
+}
+#project ul li {
+    list-style-type:none;
+    padding: 15px 0px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+#project ul li a{
+    color: rgb(138, 126, 126);
+}
+
+#project img{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+@media (max-width:992px){
+    #project ul li{
+        display: inline-block !important;
+        margin-right: 10px !important;
+    }
+    #project img{
+        align-items: center !important;
+    }
+}
+
+#testmonial{
+    margin-top: 80px;
+    padding: 120px 0px;
+    background-image: url(images/slide-03.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+#testmonial h5{
+      color: antiquewhite;
+      padding-bottom: 20px;
+}
+#testmonial h2{
+    color: aliceblue;
+    padding-bottom: 20px;
+    font-weight: 700;
 }
