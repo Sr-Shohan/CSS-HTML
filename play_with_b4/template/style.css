@@ -10,6 +10,9 @@
 .bg-dark.scrolled {
    background: rgb(26, 25, 25) !important;  
 }
+.text-white{
+    color: rgb(255, 255, 255) !important;
+}
 .carousel-item{
     height: 95vh;
     width: 100%;
@@ -217,3 +220,130 @@ fieldset .btn{
     padding-bottom: 20px;
     font-weight: 700;
 }
+
+#contact{
+   
+    background-image: url(images/dotted-map-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.container{
+    margin-top: 100px;
+}
+#contact .section-heading{
+    text-align: left;
+}
+#contact .section-heading h2{
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+#contact .contact-item ul{
+    padding-left: 0px !important;
+}
+#contact .contact-item ul li {
+    list-style-type: none;
+    text-align: left;
+    padding-top: 30px;
+    font-weight: 700;
+    color: rgb(102, 101, 101);
+}
+#contact .contact-item ul img{
+    margin-right: 20px;
+}
+.contact-form{
+    padding-top: 40px;
+}
+
+ .contact-form input,
+ textarea {
+  color: #7a7a7a;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  width: 100%;
+  height: 46px;
+  outline: none;
+  padding-top: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin-bottom: 30px;
+}
+::placeholder{
+    color: #7a7a7a;
+}
+.contact-form .btn{
+    background-color:rgb(66, 197, 66);
+    color: #fff ;
+    padding: 5px 40px;
+    margin-left: 0px;
+    border-radius: 19px;
+    border:1px solid #fff
+}
+.contact-form .btn:hover{
+    background-color:rgb(135, 221, 135);
+    color: #fff ;
+}
+footer {
+    padding: 30px 0px;
+    background: rgb(51,155,158);
+    background: linear-gradient(145deg, rgba(51,155,158,1) 0%, rgba(104,204,152,1) 100%);
+  }
+
+  footer .left-text-content p {
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  footer .left-text-content a {
+    color: #fff;
+  }
+  
+  footer .right-text-content {
+    float: right;
+  }
+  
+  footer .right-text-content p {
+    color: #fff;
+    font-size: 14px;
+    margin-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  footer .right-text-content ul li {
+    display: inline-block;
+  }
+  
+  footer .right-text-content ul li a {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #5fb759;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  footer .right-text-content ul li a:hover {
+    background-color: #5fb759;
+    color: #fff;
+  }
+  
+  @media (max-width: 992px) {
+    footer .left-text-content p {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    footer .right-text-content {
+      float: none;
+      text-align: center;
+    }
+  }
+  
